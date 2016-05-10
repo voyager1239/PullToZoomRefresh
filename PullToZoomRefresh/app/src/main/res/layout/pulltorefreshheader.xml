@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_zoom_head"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:background="@drawable/personal_center_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/middle_line"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="登录"/>
+        <View
+            android:id="@+id/middle_line"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="1dp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="注册"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/middle_line"/>
+    </RelativeLayout>
+</RelativeLayout>
