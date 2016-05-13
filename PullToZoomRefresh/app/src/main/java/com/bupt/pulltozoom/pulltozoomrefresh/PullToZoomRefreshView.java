@@ -211,7 +211,7 @@ public class PullToZoomRefreshView extends LinearLayout implements View.OnTouchL
     public void setHeaderHeight(int offset){
         if (offset<0){
             headerLayoutParams.height = mHeaderHeight-offset;
-            header.requestLayout();
+            header.requestLayout();//当view发生改变时调用，这个方法的调用会导致view的Layout重绘
         }
     }
 
